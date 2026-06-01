@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart School Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+    
+        <div class="sidebar">
+            <h2>School Portal</h2>
+
+            <ul>
+                <li onclick="showSection('dashboard')">Dashboard</li>
+                <li onclick="showSection('attendance')">Attendance</li>
+                <li onclick="showSection('marks')">Marks</li>
+                <li onclick="showSection('timetable')">Timetable</li>
+                <li onclick="showSection('announcement')">Announcements</li>
+            </ul>
+        </div>
+
+        
+        <div class="main-content">
+
+            <header>
+                <h1>Welcome Student</h1>
+                <button onclick="logout()">Logout</button>
+            </header>
+
+            
+            <section id="dashboard" class="content-section active">
+                <h2>Dashboard</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Total Subjects</h3>
+                        <p>6</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Attendance</h3>
+                        <p>92%</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Average Marks</h3>
+                        <p>85%</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="attendance" class="content-section">
+                <h2>Attendance</h2>
+
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Attendance</th>
+                    </tr>
+
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>95%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Physics</td>
+                        <td>90%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Computer Science</td>
+                        <td>93%</td>
+                    </tr>
+                </table>
+            </section>
+
+            
+            <section id="marks" class="content-section">
+                <h2>Marks</h2>
+
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>88</td>
+                    </tr>
+
+                    <tr>
+                        <td>Physics</td>
+                        <td>82</td>
+                    </tr>
+
+                    <tr>
+                        <td>Computer Science</td>
+                        <td>95</td>
+                    </tr>
+                </table>
+            </section>
+
+            
+            <section id="timetable" class="content-section">
+                <h2>Timetable</h2>
+
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>Mathematics</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Physics</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Computer Science</td>
+                    </tr>
+                </table>
+            </section>
+
+        
+            <section id="announcement" class="content-section">
+                <h2>Announcements</h2>
+
+                <div class="announcement-box">
+                    <p>Mid Semester Exams will start from next Monday.</p>
+                    <p>Project submission deadline is 20th June.</p>
+                    <p>Annual Sports Day registrations are open.</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
